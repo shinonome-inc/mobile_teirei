@@ -1,0 +1,2 @@
+# mobile_teirei
+PlayGroundモバイルコース定例会用リポジトリ
