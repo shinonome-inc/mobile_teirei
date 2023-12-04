@@ -36,8 +36,23 @@ class MyHomePage extends StatelessWidget {
           end: Alignment.bottomLeft,
         ),
       ),
-      child: const Scaffold(
+      child: Scaffold(
         backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.white,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.menu),
+          ),
+          centerTitle: true,
+          title: const Text(
+            'rregion PAY',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ),
     );
   }
