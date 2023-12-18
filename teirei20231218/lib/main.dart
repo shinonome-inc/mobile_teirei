@@ -25,14 +25,30 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
+    return Scaffold(
+      body: Container(
+        padding: const EdgeInsets.only(top: 128.0),
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/background.png'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        alignment: Alignment.topCenter,
+        child: const Text(
           'Merry Xmas',
           style: TextStyle(
+            color: Colors.white,
             fontFamily: 'Whisper',
             fontWeight: FontWeight.bold,
-            fontSize: 48.0,
+            fontSize: 64.0,
+            shadows: [
+              Shadow(
+                blurRadius: 16.0,
+              ),
+            ],
           ),
         ),
       ),
