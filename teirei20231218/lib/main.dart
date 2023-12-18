@@ -25,6 +25,17 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          'Merry Xmas',
+          style: TextStyle(
+            fontFamily: 'Whisper',
+            fontWeight: FontWeight.bold,
+            fontSize: 48.0,
+          ),
+        ),
+      ),
+    );
   }
 }
